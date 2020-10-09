@@ -19,7 +19,5 @@ a {
 a:hover > i { color: #3b5998; }
 
 #footer {
-    position: absolute;
     bottom: 0;
-    width: 100%;
 }
