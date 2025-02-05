@@ -16,6 +16,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js"></script>
+    <script language="javascript" type="text/javascript">
+
+        shortcut.add("ctrl+p", function() {
+
+        var myDiv = document.getElementById("CV_pages").innerHTML;
+            var oldPage = document.body.innerHTML;
+            document.body.innerHTML = 
+              "<html><head><title></title></head><body>" + 
+              myDiv + "</body>";
+            window.print();
+            document.body.innerHTML = oldPage;
+            });
+
+    </script>
     
     <br>
     <div class="container border-top border-bottom">
@@ -64,9 +79,9 @@
 
           
           
-          <div class="border-left col-sm-8">
+          <div class="border-left col-sm-8" id="CV_pages">
             <h4 class="pt-2">Hanif Fermanda Putra</h4>
-            <a class="pt-2">Indonesian living in Saitama, Japan</a>
+            <a class="pt-2">A highly motivated and researcher and developer with proven experience in the field of Human-Computer Interaction (HCI), specializing in interaction devices and XR (Extended Reality) technologies.  Possesses a strong background in Research and Development, contributing to innovative projects and pushing the boundaries of interactive experiences.  Expertise includes interaction device including IoT, user interface design, simulation, and machine learning.  Adept at prototyping, data analysis and passionate about creating interactive technologies.</a>
             <div class="pt-2">
                 <h4 class="text-info">Publication</h4>
                 <h6>International Journal (Peer-reviewed)</h6>
@@ -134,8 +149,9 @@
                     <li><strong>[Aug, 2012]</strong> Graduated from SMAN 1 Malang, Malang, East Java, Indonesia</li>
                 </ul>
 
-                <h4 class="text-info">Occupation History</h4>
+                <h4 class="text-info">Employment History</h4>
                 <ul>
+                    <li><strong>October 2022 - Present</strong> <br>Core Researcher in KDDI Research, Inc.</li>
                     <li><strong>December 2020</strong> <br>Guest Lecturer in Electrical Engineering Department, Telkom University, Bandung, Indonesia</li>
                     <li><strong>July 2019 - December 2021</strong> <br>Research and Development Staff in 株式会社ナレッジコミュニケーション</a>, Kumamoto, Japan</li>
                     <li><strong>June 2016 - December 2016</strong> <br>Research Assistant in Computer Engineering Departmen, Institut Teknologi Sepuluh Nopember, Surabaya, East Java, Indonesia</li>
